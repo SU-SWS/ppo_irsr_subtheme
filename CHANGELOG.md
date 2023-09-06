@@ -1,5 +1,5 @@
-# Stanford Starter Theme
+# IRSR Subtheme Theme
 
-8.x-X.X
+9.x-X.X
 --------------------------------------------------------------------------------
 _Release Date: 202X-XX-XX_
