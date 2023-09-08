@@ -1,0 +1,82 @@
+@charset 'UTF-8';
+
+// Top banner styles
+.irsr-wrapper--banner-quote-text {
+  .su-hero {
+    display: block;
+    min-height: 220px;
+  
+    .su-hero__media {
+      min-height: auto;
+      position: absolute;
+  
+      img {
+        opacity: 0.4;
+      }
+    }
+  
+    .su-hero__card {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      left: auto;
+      text-align: center;
+      max-width: unset;
+      margin: 0;
+      bottom: unset;
+  
+      @include grid-media-max('sm') {
+        text-align: left;
+      }
+  
+      .su-card__contents {
+        color: $su-color-white;
+        width: 75%;
+        margin: 0 auto;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include grid-media-max('sm') {
+          width: 100%;
+        }
+
+        :first-child {
+          margin-top: 0;
+        }
+  
+        h2 {
+          @include type-a;
+          font-family: 'Source Serif Pro';
+        }
+  
+        p {
+          @include big-paragraph;
+
+          &:first-of-type {
+            &::before {
+              // content: '';
+              // background: url("../assets/png/quote-white.png") no-repeat 0 0;
+              // height: 18px;
+              // width: 23px;
+              // background-size: 23px 23px;
+              // box-shadow: none;
+              display: block;
+              content: open-quote;
+              rotate: 180deg;
+              font-size: 8rem;
+              transform: scaleX(-3) scaleY(2.8);
+              height: 9rem;
+            }
+
+            &::after {
+              content: no-close-quote;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
