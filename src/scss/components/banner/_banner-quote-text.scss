@@ -25,11 +25,10 @@
       margin: 0;
       bottom: unset;
   
-      @include grid-media-max('sm') {
-        text-align: left;
-      }
-  
       .su-card__contents {
+        @include responsive-spacing('padding-top', 4);
+        @include responsive-spacing('padding-bottom', 5);
+
         color: $su-color-white;
         width: 75%;
         margin: 0 auto;
@@ -48,7 +47,7 @@
   
         h2 {
           @include type-a;
-          font-family: 'Source Serif Pro';
+          font-family: $su-font-serif;
         }
   
         p {
@@ -56,18 +55,19 @@
 
           &:first-of-type {
             &::before {
-              // content: '';
-              // background: url("../assets/png/quote-white.png") no-repeat 0 0;
-              // height: 18px;
-              // width: 23px;
-              // background-size: 23px 23px;
-              // box-shadow: none;
               display: block;
               content: open-quote;
               rotate: 180deg;
               font-size: 8rem;
               transform: scaleX(-3) scaleY(2.8);
-              height: 9rem;
+              height: auto;
+              position: relative;
+              bottom: 6.5rem;
+
+              @include grid-media-max('sm') {
+                font-size: 4rem;
+                bottom: 4rem;
+              }
             }
 
             &::after {
