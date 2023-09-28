@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.ptype-stanford-lists,
+.paragraph--type--stanford-lists,
+.ptype-stanford-entity,
+.paragraph--type--stanford-entity {
+  .su-list-headline,
+  .su-entity-headline {
+    // margin-bottom: 10rem;
+
+    h2 {
+      text-align: left;
+    }
+  }
+}
