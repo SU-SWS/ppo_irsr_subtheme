@@ -30,7 +30,7 @@
         @include responsive-spacing('padding-bottom', 5);
 
         color: $su-color-white;
-        width: 75%;
+        max-width: 100ch;
         margin: 0 auto;
         min-height: 220px;
         display: flex;
@@ -52,12 +52,15 @@
   
         p,
         blockquote {
-          @include big-paragraph;
+          @include type-c;
+
           margin-right: 0;
           margin-left: 0;
 
           &:first-of-type {
             &::before {
+              @include modular-spacing('margin-bottom', 1);
+
               display: block;
               content: open-quote;
               rotate: 180deg;
@@ -71,6 +74,7 @@
               @include grid-media-max('sm') {
                 font-size: 4rem;
                 bottom: 4rem;
+                margin-bottom: 0;
               }
             }
 
