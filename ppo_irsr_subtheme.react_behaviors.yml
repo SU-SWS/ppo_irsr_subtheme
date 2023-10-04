@@ -14,3 +14,4 @@ banner_variant_info:  # part of the key after the :
       options:
         irsr-wrapper--banner-default: Default variant
         irsr-wrapper--banner-quote-text: Quote text variant
+        irsr-wrapper--banner-transparent-overlay: Transparent overlay variant

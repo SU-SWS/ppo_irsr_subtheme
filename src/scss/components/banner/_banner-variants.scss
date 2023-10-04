@@ -1,7 +1,8 @@
 @charset 'UTF-8';
 
-// Top banner styles
-.irsr-wrapper--banner-quote-text {
+// Quote text and transparent overlay banner variant styles
+.irsr-wrapper--banner-quote-text,
+.irsr-wrapper--banner-transparent-overlay {
   .su-hero {
     display: block;
     min-height: 220px;
@@ -83,6 +84,23 @@
             }
           }
 
+        }
+      }
+    }
+  }
+}
+
+// Remove quote icon for transparent overlay banner variant
+.irsr-wrapper--banner-transparent-overlay {
+  .su-hero {
+    .su-hero__card {
+      .su-card__contents {
+        p {
+          &:first-of-type {
+            &::before {
+              content: none;
+            }
+          }
         }
       }
     }
