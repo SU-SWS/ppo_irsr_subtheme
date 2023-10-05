@@ -91,6 +91,11 @@ allpages:
   css:
     theme:
       dist/css/main.css: { }
+  js:
+    src/js/ppo_irsr_subtheme.behaviors.js: { }
+  dependencies:
+    - core/jquery
+    - core/once
 #      dist/css/print.css: { media: print }
 #    base:
 #      dist/css/base.css: { weight: 100 }
