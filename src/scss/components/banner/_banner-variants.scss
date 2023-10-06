@@ -88,6 +88,12 @@
       }
     }
   }
+
+  &.overlay-right {
+    .su-hero__card {
+      right: 0;
+    }
+  }
 }
 
 // Remove quote icon for transparent overlay banner variant

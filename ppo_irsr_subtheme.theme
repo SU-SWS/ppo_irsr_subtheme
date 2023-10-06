@@ -45,6 +45,6 @@ function ppo_irsr_subtheme_preprocess_banner(&$variables) {
 
   $paragraph = $variables['content']['#paragraph'];
 
-  // Add button color style class to card wrapper.
+  // Add banner variant style class to card wrapper.
   $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:banner_variant_info', 'banner_style', 'irsr-wrapper--banner-default');
 }
