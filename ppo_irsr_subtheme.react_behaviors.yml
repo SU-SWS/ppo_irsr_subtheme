@@ -9,7 +9,7 @@ banner_variant_info:  # part of the key after the :
     banner_style:
       type: select
       title: 'Banner style'
-      description: Select the button color for displaying this banner.
+      description: Select the variant for displaying this banner.
 #      default_value: irsr-wrapper--banner-default
       options:
         irsr-wrapper--banner-default: Default variant
