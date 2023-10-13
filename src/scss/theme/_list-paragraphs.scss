@@ -26,5 +26,10 @@
     @include grid-media-max('sm') {
       max-width: calc(100vw - 60px);
     }
+
+    // Individual teaser max-width
+    .su-card {
+      max-width: 100%;
+    }
   }
 }
