@@ -10,8 +10,32 @@ banner_variant_info:  # part of the key after the :
       type: select
       title: 'Banner style'
       description: Select the variant for displaying this banner.
-#      default_value: irsr-wrapper--banner-default
+      # default_value: irsr-wrapper--banner-default
       options:
         irsr-wrapper--banner-default: Default variant
         irsr-wrapper--banner-quote-text: Quote text variant
         irsr-wrapper--banner-transparent-overlay: Transparent overlay variant
+
+lists_style:
+  id: lists_style
+  label: Lists Paragraph Style
+  bundles:
+    - paragraphs_type|stanford_lists
+  config:
+    cards_color:
+      type: select
+      title: Cards color scheme
+      description: Applicable only to lists with cards.
+      # default_value: irsr-cards-color--default
+      options:
+        irsr-cards-color--default: Default Cards
+        irsr-cards-color--red: Red Cards
+        irsr-cards-color--grey: Dark grey Cards
+    grid_rows:
+      type: select
+      title: Max number of grid columns
+      description: Applicable only to lists with cards.
+      # default_value: irsr-card-grid--default
+      options:
+        irsr-card-grid--default: Max 3 grid columns
+        irsr-card-grid--two: Max 2 grid columns
