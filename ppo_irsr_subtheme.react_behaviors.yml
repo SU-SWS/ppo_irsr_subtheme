@@ -38,4 +38,4 @@ lists_style:
       # default_value: irsr-card-grid--default
       options:
         irsr-card-grid--default: Max 3 grid columns
-        irsr-card-grid--two: Max 2 grid columns
+        irsr-card-grid--two-col: Max 2 grid columns

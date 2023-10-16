@@ -36,11 +36,6 @@ function ppo_irsr_subtheme_preprocess_ds_entity_view(&$variables) {
   if ($paragraph->bundle() == 'stanford_banner') {
     ppo_irsr_subtheme_preprocess_banner($variables);
   }
-
-  // Process Lists
-  if ($paragraph->bundle() == 'stanford_lists') {
-    ppo_irsr_subtheme_preprocess_lists($variables);
-  }
 }
 
 /**

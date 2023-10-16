@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.irsr-card-grid--two-col {
+  .grid-container-3 {
+    @include grid-media-min('md') {
+      grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+  }
+}
