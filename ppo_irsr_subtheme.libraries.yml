@@ -106,3 +106,9 @@ allpages:
 #    state:
 #      dist/css/state.css: {}
 
+
+basic-page-full-width:
+  version: VERSION
+  css:
+    theme:
+      dist/css/full-width.basic-page.css: {}
