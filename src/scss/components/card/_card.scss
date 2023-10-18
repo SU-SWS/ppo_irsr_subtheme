@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+// Equal height cards
+@include grid-media-min ('md') {
+  .ds-entity--node {
+    height: 100%;
+
+    .su-card {
+      height: 100%;
+    }
+  }
+  
+  // Card paragraph type
+  .ptype-stanford-card {
+    height: 100%;
+
+    .ds-entity--stanford-card {
+      height: 100%;
+
+      .su-card {
+        height: 100%;
+      }
+    }
+  }
+
+  // More News section
+  .stanford-news.vertical-teaser-term {
+    .su-list-unstyled {
+      // Needed when less than 4 news items
+      @include responsive-spacing('margin-bottom', 3);
+    }
+  }
+
+  // More Publications section
+  .stanford-publications-related {
+    .su-card {
+      height: 100%;
+    }
+  }
+  
+}
