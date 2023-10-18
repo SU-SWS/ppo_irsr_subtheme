@@ -1,35 +1,10 @@
 @charset "UTF-8";
 
-// .layout-paragraphs-two-column,
-// .layout--layout-paragraphs-three-column,
 .layout--layout-paragraphs-one-column {
   .ptype-stanford-lists,
   .paragraph--type--stanford-lists,
   .ptype-stanford-entity,
   .paragraph--type--stanford-entity {
-    // layout full width    
-    // @include grid-media-max('2xl') {
-    //   max-width: calc(83.33333% - 8px);
-    // }
-
-    // @include grid-media-max('xl') {
-    //   max-width: calc(83.33333% - 6.66667px);
-    // }
-
-    // @include grid-media-max('lg') {
-    //   max-width: calc(83.33333% - 6px);
-    // }
-
-    // // @include grid-media-max('md') {
-    // //   max-width: calc(83.33333% - 3.33333px);
-    // // }
-
-    // @include grid-media-max('sm') {
-    //   max-width: calc(83.33333% - 3.33333px);
-    // }
-
-
-    // layout none page
     max-width: calc(100vw - 40px);
 
     @include grid-media-max('2xl') {
@@ -56,12 +31,5 @@
     .su-card {
       max-width: 100%;
     }
-  }
-}
-
-// Remove padding so lists and teasers are aligned with h1
-.flex-container {
-  .main-region {
-    padding-left: 0;
   }
 }
