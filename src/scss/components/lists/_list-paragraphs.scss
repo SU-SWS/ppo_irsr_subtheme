@@ -6,27 +6,7 @@
   .paragraph--type--stanford-lists,
   .ptype-stanford-entity,
   .paragraph--type--stanford-entity {
-    max-width: calc(100vw - 40px);
-
-    @include grid-media-max('2xl') {
-      max-width: 1500px;
-    }
-
-    @include grid-media-max('xl') {
-      max-width: calc(100vw - 200px);
-    }
-
-    @include grid-media-max('lg') {
-      max-width: calc(100vw - 160px);
-    }
-
-    @include grid-media-max('md') {
-      max-width: calc(100vw - 100px);
-    }
-
-    @include grid-media-max('sm') {
-      max-width: calc(100vw - 60px);
-    }
+    @include responsive-flex-column(12);
 
     // Individual teaser max-width
     .su-card {
