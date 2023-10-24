@@ -7,3 +7,37 @@ $fa-font-path:  '~@fortawesome/fontawesome-free/webfonts';
 // Import Decanter Library:
 @import 'decanter/core/src/scss/decanter-no-markup';
 
+// Align lists and teasers with h1 for full-width pages
+.layout--layout-paragraphs-one-column {
+  .ptype-stanford-lists,
+  .paragraph--type--stanford-lists,
+  .ptype-stanford-entity,
+  .paragraph--type--stanford-entity {
+    @include responsive-flex-column(10);
+
+    // Individual teaser max-width
+    .su-card {
+      max-width: 100%;
+    }
+  }
+}
+
+.su-page-components {
+  .layout--layout-paragraphs-two-column,
+  .layout--layout-paragraphs-three-column {
+    @include responsive-flex-column(10);
+
+    .ptype-stanford-lists,
+    .paragraph--type--stanford-lists,
+    .ptype-stanford-entity,
+    .paragraph--type--stanford-entity {
+      max-width: 100%;
+
+      // Individual teaser max-width
+      .su-card {
+        max-width: 100%;
+      }
+    }
+  
+  }
+}
