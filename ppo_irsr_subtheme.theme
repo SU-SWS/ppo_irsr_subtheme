@@ -6,6 +6,15 @@
  */
 
 /**
+ * Implements hook_preprocess().
+ */
+function ppo_irsr_subtheme_preprocess(&$variables, $hook) {
+  if ($hook === 'pattern_news-vertical-teaser') {
+    $variables['use'] = '@ppo_irsr_subtheme/news-vertical-teaser/news-vertical-teaser.html.twig';
+  }
+}
+
+/**
  * Prepares variables for the html.html.twig template.
  */
 function ppo_irsr_subtheme_preprocess_html(&$variables) {
