@@ -74,8 +74,8 @@ function ppo_irsr_subtheme_preprocess_paragraph__stanford_lists(array &$variable
   $paragraph = &$variables['paragraph'];
   $existing_classes = $variables['attributes']['class'] ?? [];
   $extra_classes = [
-    $paragraph->getBehaviorSetting('react_paragraphs:lists_style', 'cards_color'),
-    $paragraph->getBehaviorSetting('react_paragraphs:lists_style', 'grid_rows'),
+    $paragraph->getBehaviorSetting('react_paragraphs:lists_variant_info', 'cards_color'),
+    $paragraph->getBehaviorSetting('react_paragraphs:lists_variant_info', 'grid_rows'),
   ];
   $variables['attributes']['class'] = array_merge($existing_classes, $extra_classes);
 }
