@@ -8,15 +8,6 @@
 use Drupal\node\NodeInterface;
 
 /**
- * Implements hook_preprocess().
- */
-function ppo_irsr_subtheme_preprocess(&$variables, $hook) {
-  if ($hook === 'pattern_news-vertical-teaser') {
-    $variables['use'] = '@ppo_irsr_subtheme/news-vertical-teaser/news-vertical-teaser.html.twig';
-  }
-}
-
-/**
  * Prepares variables for the html.html.twig template.
  */
 function ppo_irsr_subtheme_preprocess_html(&$variables) {
@@ -72,7 +63,7 @@ function ppo_irsr_subtheme_preprocess_banner(&$variables) {
   $paragraph = $variables['content']['#paragraph'];
 
   // Add banner variant style class to card wrapper.
-  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:banner_variant_info', 'banner_style', 'irsr-wrapper--banner-default');
+  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:banner_variant_info', 'banner_style');
 }
 
 /**
@@ -83,8 +74,8 @@ function ppo_irsr_subtheme_preprocess_paragraph__stanford_lists(array &$variable
   $paragraph = &$variables['paragraph'];
   $existing_classes = $variables['attributes']['class'] ?? [];
   $extra_classes = [
-    $paragraph->getBehaviorSetting('react_paragraphs:lists_style', 'cards_color', 'irsr-cards-color--default'),
-    $paragraph->getBehaviorSetting('react_paragraphs:lists_style', 'grid_rows', 'irsr-card-grid--default'),
+    $paragraph->getBehaviorSetting('react_paragraphs:lists_style', 'cards_color'),
+    $paragraph->getBehaviorSetting('react_paragraphs:lists_style', 'grid_rows'),
   ];
   $variables['attributes']['class'] = array_merge($existing_classes, $extra_classes);
 }

@@ -8,11 +8,6 @@ base theme: stanford_basic
 libraries:
   - ppo_irsr_subtheme/allpages
 
-components:
-  namespaces:
-    irsr: templates
-    irsr_subtheme: templates/components
-
 regions:
   page_top: 'Page top'
   header: Header
