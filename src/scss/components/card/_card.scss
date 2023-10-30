@@ -166,12 +166,32 @@
 .irsr-cards-color--red {
   .su-card {
     background-color: $su-color-digital-red;
+
+    .su-button,
+    .su-button--big {
+      background-color: $su-color-black;
+    }
+
+    .su-button--secondary {
+      background-color: $su-color-digital-red;
+      box-shadow: inset 0 0 0 2px $su-color-white;
+    }
   }
 }
 
 .irsr-cards-color--grey {
   .su-card {
     background-color: $su-color-black;
+
+    .su-button,
+    .su-button--big {
+      background-color: $su-color-digital-red;
+    }
+
+    .su-button--secondary {
+      background-color: $su-color-black;
+      box-shadow: inset 0 0 0 2px $su-color-white;
+    }
   }
 
   .su-list-button {
