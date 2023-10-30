@@ -63,5 +63,19 @@ function ppo_irsr_subtheme_preprocess_banner(&$variables) {
   $paragraph = $variables['content']['#paragraph'];
 
   // Add banner variant style class to card wrapper.
-  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:banner_variant_info', 'banner_style', 'irsr-wrapper--banner-default');
+  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:banner_variant_info', 'banner_style');
+}
+
+/**
+ * Implements hook_preprocess_lists().
+ */
+function ppo_irsr_subtheme_preprocess_paragraph__stanford_lists(array &$variables): void {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = &$variables['paragraph'];
+  $existing_classes = $variables['attributes']['class'] ?? [];
+  $extra_classes = [
+    $paragraph->getBehaviorSetting('react_paragraphs:lists_variant_info', 'cards_color'),
+    $paragraph->getBehaviorSetting('react_paragraphs:lists_variant_info', 'grid_rows'),
+  ];
+  $variables['attributes']['class'] = array_merge($existing_classes, $extra_classes);
 }

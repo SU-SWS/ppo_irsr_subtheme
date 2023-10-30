@@ -37,5 +37,146 @@
       height: 100%;
     }
   }
+ 
+}
+
+// Card color variants
+.irsr-cards-color--red,
+.irsr-cards-color--grey {
+  .su-card {
+    .su-link {
+      color: $su-color-white;
+
+      &::after {
+        background-color: $su-color-white;
+      }
+    }
+
+    .su-card__contents {
+      color: $su-color-white;
+
+      a {
+        color: $su-color-white;
+        // color: $su-color-white !important;
+
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: underline;
+          color: $su-color-white;
+
+          &::after {
+            background-color: $su-color-white;
+          }
+        }
+
+        &::after {
+          background-color: $su-color-white;
+        }
+      }
+    }
+
+    // News card
+    &.su-news-vertical-teaser {
+      .news-vertical-teaser__topics {
+        a {
+          color: $su-color-white;
+          
+          &:hover,
+          &:focus,
+          &:active {
+            text-decoration: underline;
+            color: $su-color-white;
+          }
+        }
+      }
+    }
+
+    // Event card
+    &.su-event-card {
+      .su-event-start-month,
+      .su-event-start-date,
+      .su-event-list-item__date__seperator,
+      .su-event-end-month,
+      .su-event-end-date {
+        color: $su-color-white;
+      }
   
+      .su-event-list-item__details {
+        color: $su-color-white;
+  
+        .event-list-item__type a {
+          color: $su-color-white;
+        }
+  
+        h2 {
+          a {
+            color: $su-color-white;
+            
+            &:hover,
+            &:focus,
+            &:active {
+              text-decoration: underline;
+              color: $su-color-white;
+            }
+  
+            &::after {
+              background-color: $su-color-white;
+            }
+          }
+        } 
+  
+        .date-icon::before,
+        .map-icon::before {
+          color: $su-color-white;
+        }
+      }
+    }
+
+    // Course Card
+    &.su-course-vertical-teaser {
+      .su-course-header {
+        color: $su-color-white;
+      }
+
+      .su-course-link {
+        .su-link {
+
+          &::after {
+            background-color: $su-color-white;
+          }
+          
+          a {
+            color: $su-color-white;
+              
+            &:hover,
+            &:focus,
+            &:active {
+              text-decoration: underline;
+              color: $su-color-white;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.irsr-cards-color--red {
+  .su-card {
+    background-color: $su-color-digital-red;
+  }
+}
+
+.irsr-cards-color--grey {
+  .su-card {
+    background-color: $su-color-black;
+  }
+
+  .su-list-button {
+    .su-button {
+      background-color: $su-color-black;
+    }
+  }
 }
