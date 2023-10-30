@@ -15,6 +15,21 @@ banner_variant_info:  # part of the key after the :
         irsr-wrapper--banner-quote-text: Quote text
         irsr-wrapper--banner-transparent-overlay: Transparent overlay
 
+card_variant_info:
+  id: card_type
+  label: 'Card Paragraph Type'
+  bundles:
+    - paragraphs_type|stanford_card
+  config:
+    card_color:
+      type: select
+      title: Card color scheme
+      description: Choose the card background color.
+      empty_option: Default
+      options:
+        irsr-cards-color--red: Red card
+        irsr-cards-color--grey: Dark grey card
+
 lists_variant_info:
   id: lists_style
   label: Lists Paragraph Style
@@ -36,18 +51,3 @@ lists_variant_info:
       empty_option: Default
       options:
         irsr-card-grid--two-col: Max 2 grid columns
-
-card_variant_info:
-  id: card_type
-  label: 'Card Paragraph Type'
-  bundles:
-    - paragraphs_type|stanford_card
-  config:
-    card_color:
-      type: select
-      title: Card color scheme
-      description: Choose the card background color.
-      empty_option: Default
-      options:
-        irsr-cards-color--red: Red card
-        irsr-cards-color--grey: Dark grey card
