@@ -30,6 +30,28 @@ card_variant_info:
         irsr-cards-color--red: Red card
         irsr-cards-color--grey: Dark grey card
 
+entity_variant_info:
+  id: entity_style
+  label: Teaser Paragraph Style
+  bundles:
+    - paragraphs_type|stanford_entity
+  config:
+    cards_color:
+      type: select
+      title: Cards color scheme
+      description: Choose the card background color.
+      empty_option: Default
+      options:
+        irsr-cards-color--red: Red cards
+        irsr-cards-color--grey: Dark grey cards
+    grid_rows:
+      type: select
+      title: Max number of grid columns
+      description: Choose the max number of grid columns.
+      empty_option: Default
+      options:
+        irsr-card-grid--two-col: Max 2 grid columns
+
 lists_variant_info:
   id: lists_style
   label: Lists Paragraph Style

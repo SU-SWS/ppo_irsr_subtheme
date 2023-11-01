@@ -57,6 +57,7 @@
 
       a {
         color: $su-color-white;
+        text-decoration: none;
 
         &:hover,
         &:focus,
@@ -196,6 +197,33 @@
   .su-list-button {
     .su-button {
       background-color: $su-color-black;
+    }
+  }
+}
+
+// Teaser Variants
+.ptype-stanford-entity {
+  // Course teaser full height fixup
+  .su-course-vertical-teaser {
+    grid-auto-rows: max-content;
+  }
+}
+
+@include grid-media-min('lg') {
+  .layout--layout-paragraphs-one-column {
+    .ptype-stanford-entity {
+      &.irsr-card-grid--two-col {
+        .su-entity-item {
+          >div {
+            width: calc(50% - 40px);
+            margin: inherit;
+      
+            &:nth-child(n+4) {
+              margin-top: 0;
+            }
+          }
+        }
+      }
     }
   }
 }
