@@ -52,6 +52,21 @@ entity_variant_info:
       options:
         irsr-card-grid--two-col: Max 2 grid columns
 
+layout_variant_info:
+  id: layout_style
+  label: Lists Paragraph Style
+  bundles:
+    - paragraphs_type|stanford_layout
+  config:
+    section_color:
+      type: select
+      title: Section background color
+      description: Choose the section background color.
+      empty_option: Default
+      options:
+        irsr-section-color--foggy: Fog
+        irsr-section-color--foggy-light: Light Fog
+
 lists_variant_info:
   id: lists_style
   label: Lists Paragraph Style

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+//  Layout paragraph type section variant styles
+.irsr-section-color--foggy,
+.irsr-section-color--foggy-light {
+  @include responsive-spacing('padding-top', 5);
+  @include responsive-spacing('padding-bottom', 5);
+
+  position: relative;
+}
+
+.irsr-section-color--foggy {
+  background-color: $su-color-foggy;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    /* fill vertically */
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    right: 100%;
+    background: $su-color-foggy;
+  }
+
+  &::after {
+    left: 100%;
+  }
+}
+
+.irsr-section-color--foggy-light {
+  background-color: $su-color-foggy-light;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    /* fill vertically */
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    right: 100%;
+    background: $su-color-foggy-light;
+  }
+
+  &::after {
+    left: 100%;
+  }
+}
+
+// Prevent background color overflow
+.content {
+  overflow-x: clip;
+}
