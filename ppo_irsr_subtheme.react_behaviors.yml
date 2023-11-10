@@ -54,7 +54,7 @@ entity_variant_info:
 
 layout_variant_info:
   id: layout_style
-  label: Lists Paragraph Style
+  label: 'Layout Paragraph Type'
   bundles:
     - paragraphs_type|stanford_layout
   config:
