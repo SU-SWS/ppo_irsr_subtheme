@@ -4,7 +4,7 @@
 .irsr-section-color--foggy,
 .irsr-section-color--foggy-light {
   @include responsive-spacing('padding-top', 5);
-  @include responsive-spacing('padding-bottom', 5);
+  @include responsive-spacing('padding-bottom', 7);
 
   position: relative;
 }
