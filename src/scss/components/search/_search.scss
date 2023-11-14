@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@include grid-media-min('md') {
+  .su-site-search {
+    display: none;
+  }
+
+  .su-multi-menu {
+    display: flex;
+  
+    .menu-search-button {
+      position: unset;
+      margin-left: 3.6rem;
+      align-self: center;
+      width: 2.6rem;
+    }
+  }
+}
+
+@include grid-media-max('md') {
+  .menu-search-button {
+    display: none;
+  }
+}
