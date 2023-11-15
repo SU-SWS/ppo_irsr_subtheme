@@ -2,7 +2,7 @@
   'use strict';
   Drupal.behaviors.ppoIrsrSubtheme = {
     attach: function (context) {
-      const menuSearchButton = $('<a>', { class: 'menu-search-button su-site-search__submit su-sr-only-text', 'href': '/search', 'aria-label': 'Go to search page' });
+      const menuSearchButton = $('<a>', { class: 'menu-search-button su-site-search__submit', 'href': '/search', 'aria-label': 'Go to search page' });
       $('.su-multi-menu', context).append(menuSearchButton);
 
       // Replace <p> tag for quote-text banner with <blockquote>
