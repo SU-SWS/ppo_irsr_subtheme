@@ -53,6 +53,12 @@ function ppo_irsr_subtheme_preprocess_ds_entity_view(&$variables) {
   if ($paragraph->bundle() == 'stanford_banner') {
     ppo_irsr_subtheme_preprocess_banner($variables);
   }
+
+  // Process Cards
+  if ($paragraph->bundle() == 'stanford_card') {
+    ppo_irsr_subtheme_preprocess_card($variables);
+  }
+
 }
 
 /**
@@ -67,6 +73,17 @@ function ppo_irsr_subtheme_preprocess_banner(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess_card().
+ */
+function ppo_irsr_subtheme_preprocess_card(&$variables) {
+
+  $paragraph = $variables['content']['#paragraph'];
+
+  // Add variant style class to card wrapper.
+  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:card_variant_info', 'card_color');
+}
+
+/**
  * Implements hook_preprocess_lists().
  */
 function ppo_irsr_subtheme_preprocess_paragraph__stanford_lists(array &$variables): void {
@@ -76,6 +93,33 @@ function ppo_irsr_subtheme_preprocess_paragraph__stanford_lists(array &$variable
   $extra_classes = [
     $paragraph->getBehaviorSetting('react_paragraphs:lists_variant_info', 'cards_color'),
     $paragraph->getBehaviorSetting('react_paragraphs:lists_variant_info', 'grid_rows'),
+  ];
+  $variables['attributes']['class'] = array_merge($existing_classes, $extra_classes);
+}
+
+/**
+ * Implements hook_preprocess_entity().
+ */
+function ppo_irsr_subtheme_preprocess_paragraph__stanford_entity(array &$variables): void {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = &$variables['paragraph'];
+  $existing_classes = $variables['attributes']['class'] ?? [];
+  $extra_classes = [
+    $paragraph->getBehaviorSetting('react_paragraphs:entity_variant_info', 'cards_color'),
+    $paragraph->getBehaviorSetting('react_paragraphs:entity_variant_info', 'grid_rows'),
+  ];
+  $variables['attributes']['class'] = array_merge($existing_classes, $extra_classes);
+}
+
+/**
+ * Implements hook_preprocess_paragraph__stanford_layout().
+ */
+function ppo_irsr_subtheme_preprocess_paragraph__stanford_layout(array &$variables): void {
+  /** @var \Drupal\paragraphs\Layout\Paragraph $paragraph */
+  $paragraph = &$variables['paragraph'];
+  $existing_classes = $variables['attributes']['class'] ?? [];
+  $extra_classes = [
+    $paragraph->getBehaviorSetting('react_paragraphs:layout_variant_info', 'section_color'),
   ];
   $variables['attributes']['class'] = array_merge($existing_classes, $extra_classes);
 }

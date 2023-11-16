@@ -57,7 +57,7 @@
 
       a {
         color: $su-color-white;
-        // color: $su-color-white !important;
+        text-decoration: none;
 
         &:hover,
         &:focus,
@@ -81,7 +81,7 @@
       .news-vertical-teaser__topics {
         a {
           color: $su-color-white;
-          
+
           &:hover,
           &:focus,
           &:active {
@@ -101,31 +101,31 @@
       .su-event-end-date {
         color: $su-color-white;
       }
-  
+
       .su-event-list-item__details {
         color: $su-color-white;
-  
+
         .event-list-item__type a {
           color: $su-color-white;
         }
-  
+
         h2 {
           a {
             color: $su-color-white;
-            
+
             &:hover,
             &:focus,
             &:active {
               text-decoration: underline;
               color: $su-color-white;
             }
-  
+
             &::after {
               background-color: $su-color-white;
             }
           }
         } 
-  
+
         .date-icon::before,
         .map-icon::before {
           color: $su-color-white;
@@ -145,10 +145,10 @@
           &::after {
             background-color: $su-color-white;
           }
-          
+
           a {
             color: $su-color-white;
-              
+
             &:hover,
             &:focus,
             &:active {
@@ -166,17 +166,64 @@
 .irsr-cards-color--red {
   .su-card {
     background-color: $su-color-digital-red;
+
+    .su-button,
+    .su-button--big {
+      background-color: $su-color-black;
+    }
+
+    .su-button--secondary {
+      background-color: $su-color-digital-red;
+      box-shadow: inset 0 0 0 2px $su-color-white;
+    }
   }
 }
 
 .irsr-cards-color--grey {
   .su-card {
     background-color: $su-color-black;
+
+    .su-button,
+    .su-button--big {
+      background-color: $su-color-digital-red;
+    }
+
+    .su-button--secondary {
+      background-color: $su-color-black;
+      box-shadow: inset 0 0 0 2px $su-color-white;
+    }
   }
 
   .su-list-button {
     .su-button {
       background-color: $su-color-black;
+    }
+  }
+}
+
+// Teaser Variants
+.ptype-stanford-entity {
+  // Course teaser full height fixup
+  .su-course-vertical-teaser {
+    grid-auto-rows: max-content;
+  }
+}
+
+@include grid-media-min('lg') {
+  .layout--layout-paragraphs-one-column {
+    .ptype-stanford-entity {
+      &.irsr-card-grid--two-col {
+        .su-entity-item {
+          >div {
+            width: calc(50% - 40px);
+            margin: inherit;
+      
+            &:nth-child(n+4) {
+              margin-top: 0;
+            }
+          }
+        }
+      }
     }
   }
 }
