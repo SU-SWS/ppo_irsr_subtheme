@@ -27,7 +27,7 @@
 }
 
 @include grid-media-max('md') {
-  .menu-search-button {
+  .menu-search-link {
     display: none;
   }
 }
