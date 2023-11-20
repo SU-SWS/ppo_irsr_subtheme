@@ -8,11 +8,11 @@ Description
 
 The IRSR Subtheme is a Stanford sub-theme that works with the Stanford Basic theme and was built by modifying the [Stanford Starter](https://github.com/SU-SWS/stanford_starter) Subtheme. This theme includes the following features:
 
-Equal height rows
-Section variants
-Card variants
-List variants
-Quote banner variant
+- Equal height rows
+- Section variants
+- Card variants
+- List variants
+- Quote banner variant
 
 
 Documentation
