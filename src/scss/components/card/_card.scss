@@ -216,10 +216,9 @@
         .su-entity-item {
           >div {
             width: calc(50% - 40px);
-            margin: inherit;
-      
-            &:nth-child(n+4) {
-              margin-top: 0;
+
+            &:nth-child(n+3) {
+              @include responsive-spacing('margin-top', 4);
             }
           }
         }
