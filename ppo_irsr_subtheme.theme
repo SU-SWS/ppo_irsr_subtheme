@@ -119,6 +119,7 @@ function ppo_irsr_subtheme_preprocess_paragraph__stanford_layout(array &$variabl
   $paragraph = &$variables['paragraph'];
   $existing_classes = $variables['attributes']['class'] ?? [];
   $extra_classes = [
+    $paragraph->getBehaviorSetting('react_paragraphs:layout_variant_info', 'padding_bottom'),
     $paragraph->getBehaviorSetting('react_paragraphs:layout_variant_info', 'section_color'),
   ];
   $variables['attributes']['class'] = array_merge($existing_classes, $extra_classes);
