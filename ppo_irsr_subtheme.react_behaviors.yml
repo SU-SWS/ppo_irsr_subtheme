@@ -68,7 +68,7 @@ layout_variant_info:
         irsr-section-color--foggy-light: Light Fog
     padding_bottom:
       type: select
-      title: Section padding-bottom
+      title: Section padding bottom
       description: Choose the section padding bottom.
       empty_option: Default
       options:
