@@ -87,7 +87,6 @@
 #       css/pattern-library/theme/print.css: { media: print }
 
 allpages:
-  version: VERSION
   css:
     theme:
       dist/css/main.css: { }
@@ -108,7 +107,6 @@ allpages:
 
 
 basic-page-full-width:
-  version: VERSION
   css:
     theme:
       dist/css/full-width.basic-page.css: {}
