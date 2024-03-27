@@ -50,9 +50,12 @@
         h3,
         h4,
         .su-font-splash {
-          @include type-a;
           font-family: $su-font-serif;
           @include responsive-spacing('margin-bottom', -1);
+        }
+        
+        h2 {
+          @include type-a;
         }
 
         p,
