@@ -1,5 +1,5 @@
 # [IRSR Subtheme](https://github.com/SU-SWS/ppo_irsr_subtheme)
-##### Version: 1.4.0
+##### Version: 1.4.3
 
 Changelog: [Changelog.txt](CHANGELOG.txt)
 
