@@ -227,3 +227,22 @@
     }
   }
 }
+
+// Override for people cards.
+.view .su-person-photo {
+  margin: 0 auto;
+  padding: 30px 30px 0;
+}
+
+.view .ds-entity--stanford-person {
+  text-align: center;
+}
+
+.view .ds-entity--stanford-person .su-card__contents {
+  padding-bottom: 30px;
+}
+
+.view .su-person-photo img,
+.view .su-person-photo picture {
+  max-width: 245px;
+}
