@@ -3,16 +3,47 @@
 // For only one site - facultydevelopment
 .su-lockup {
   &.su-lockup--option-a {
-      a {
-          &[href*=facultydevelopment],
-          &[href*=fdde],
-          &[href*=stanfordprofile] {
-              .su-lockup__cell2 {
-                  max-width: 500px;
-              }
+    a {
+      // &[href*=stanfordprofile], // Add when needed for local testing.
+      &[href*=facultydevelopment],
+      &[href*=fdde],
+      &[href*=fdemarch25] {
+
+        @media only screen and (min-width: 768px) and (max-width: 1146px) {
+          .su-lockup__cell1 {
+            border-right: none;
+            min-width: 90%;
           }
+
+          .su-lockup__cell2 {
+            border-left: none;
+            order: 2;
+          }
+
+          .su-lockup__line1 {
+            font-size: 26px;
+            margin-left: -8px;
+            margin-top: 0;
+          }
+
+          .su-lockup__line5 {
+            font-weight: 600;
+
+            &::after {
+                border-bottom: 1px solid $su-color-black;
+                content: "";
+                display: block;
+                margin-bottom: 0.5rem;
+                margin-top: 0.75rem;
+                width: 120px;
+            }
+          }
+        }
+
+        .su-lockup__cell2 {
+            max-width: 500px;
+        }
       }
+    }
   }
 }
-
-// Logo is wonky in this window size range : 1146px to 992px
