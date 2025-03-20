@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+// For only one site - facultydevelopment
+.su-lockup {
+  &.su-lockup--option-a {
+      a {
+          &[href*=facultydevelopment],
+          &[href*=fdde],
+          &[href*=stanfordprofile] {
+              .su-lockup__cell2 {
+                  max-width: 500px;
+              }
+          }
+      }
+  }
+}
+
+// Logo is wonky in this window size range : 1146px to 992px
