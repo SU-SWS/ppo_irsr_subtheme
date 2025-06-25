@@ -22,6 +22,12 @@
           }
         }
 
+        &.irsr-section-pb-none {
+          .layout-background {
+            padding-bottom: 0;
+          }
+        }
+
       //  Layout paragraph type section variant styles
       &.irsr-section-color--foggy,
       &.irsr-section-color--foggy-light {
@@ -44,9 +50,7 @@
         }
       }
 
-      &.irsr-section-pb-none {
-        padding-bottom: 0;
-      }
+
 
       &.irsr-section-color--foggy {
         background-color: $su-color-foggy;
