@@ -10,14 +10,17 @@
 
     .ptype-stanford-layout {
       // Override for new Section Options
-      .layout-background {
-        @include responsive-spacing('padding-top', 5);
-        @include responsive-spacing('padding-bottom', 7);
+        &.irsr-section-color--foggy,
+        &.irsr-section-color--foggy-light {
+          .layout-background {
+            @include responsive-spacing('padding-top', 5);
+            @include responsive-spacing('padding-bottom', 7);
 
-        &.bottom-margin-none {
-          margin-bottom: 0;
+            &.bottom-margin-none {
+              margin-bottom: 0;
+            }
+          }
         }
-      }
 
       //  Layout paragraph type section variant styles
       &.irsr-section-color--foggy,
