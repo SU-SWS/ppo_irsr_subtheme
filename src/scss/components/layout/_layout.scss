@@ -9,13 +9,14 @@
     margin-bottom: 0;
 
     .ptype-stanford-layout {
-      padding-top: 0;
-      padding-bottom: 0;
-
       // Override for new Section Options
       .layout-background {
         @include responsive-spacing('padding-top', 5);
         @include responsive-spacing('margin-bottom', 7);
+
+        &.bottom-margin-none {
+          margin-bottom: 0;
+        }
       }
 
       //  Layout paragraph type section variant styles
