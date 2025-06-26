@@ -12,6 +12,7 @@ use Drupal\node\NodeInterface;
  */
 function ppo_irsr_subtheme_preprocess_html(&$variables) {
   $variables['stanford_basic_path'] = \Drupal::service('extension.list.theme')->getPath('stanford_basic');
+  $variables['attributes']['class'][] = 'ppo-subtheme';
 }
 
 /**
