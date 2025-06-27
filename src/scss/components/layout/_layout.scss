@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 .content {
   // Prevent background color overflow
   overflow-x: clip;
@@ -32,6 +31,10 @@
         &::after {
           left: 100%;
         }
+      }
+
+      &.irsr-section-pt-none {
+        padding-top: 0;
       }
 
       &.irsr-section-pb-none {

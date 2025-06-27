@@ -54,6 +54,10 @@ function ppo_irsr_subtheme_preprocess_ds_entity_view(&$variables) {
     ppo_irsr_subtheme_preprocess_banner($variables);
   }
 
+  if ($paragraph->bundle() == 'stanford_page_title_banner') {
+    ppo_irsr_subtheme_preprocess_banner($variables);
+  }
+
   // Process Cards
   if ($paragraph->bundle() == 'stanford_card') {
     ppo_irsr_subtheme_preprocess_card($variables);
@@ -68,8 +72,9 @@ function ppo_irsr_subtheme_preprocess_banner(&$variables) {
 
   $paragraph = $variables['content']['#paragraph'];
 
-  // Add banner variant style class to card wrapper.
+  // Add banner variant style class to banner wrapper.
   $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:banner_variant_info', 'banner_style');
+  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:page_title_variant_info', 'banner_style');
 }
 
 /**
@@ -121,6 +126,7 @@ function ppo_irsr_subtheme_preprocess_paragraph__stanford_layout(array &$variabl
   $extra_classes = [
     $paragraph->getBehaviorSetting('react_paragraphs:layout_variant_info', 'padding_bottom'),
     $paragraph->getBehaviorSetting('react_paragraphs:layout_variant_info', 'section_color'),
+    $paragraph->getBehaviorSetting('react_paragraphs:layout_variant_info', 'padding_top'),
   ];
   $variables['attributes']['class'] = array_merge($existing_classes, $extra_classes);
 }
