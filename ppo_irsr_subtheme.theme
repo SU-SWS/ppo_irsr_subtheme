@@ -74,7 +74,7 @@ function ppo_irsr_subtheme_preprocess_banner(&$variables) {
 
   // Add banner variant style class to banner wrapper.
   $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:banner_variant_info', 'banner_style');
-  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:page_title_variant_info', 'banner_style');
+  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:page_title_variant_info', 'page_title_type');
 }
 
 /**
