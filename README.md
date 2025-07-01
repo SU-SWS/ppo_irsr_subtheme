@@ -1,22 +1,25 @@
-# [IRSR Subtheme](https://github.com/SU-SWS/ppo_irsr_subtheme)
-##### Version: 1.4.3
+# [PPO Subtheme](https://github.com/SU-SWS/ppo_irsr_subtheme)
+##### Version: 1.5.0
 
 Changelog: [Changelog.txt](CHANGELOG.txt)
 
 Description
 ---
 
-The IRSR Subtheme is a Stanford sub-theme that works with the Stanford Basic theme and was built by modifying the [Stanford Starter](https://github.com/SU-SWS/stanford_starter) Subtheme. This theme includes the following features:
+The PPO IRSR Subtheme is a Stanford sub-theme that works with the Stanford Basic theme and was built by modifying the [Stanford Starter](https://github.com/SU-SWS/stanford_starter) Subtheme. This theme includes the following features:
 
 - Equal height rows
 - Section variants
 - Card variants
 - List variants
 - Quote banner variant
+- Page Title variant
 
 
 Documentation
 ---
+Documentation for users of the PPO subtheme can be seen here: https://docs.google.com/document/d/1A5nRZka2Hym4NNUm1NZ7wbNztAONsrR9o1WWt3lgiIs/edit?usp=sharing
+
 See subtheming guides and best practices here: 
 https://devguide.sites.stanford.edu/front-end/drupal/sub-themes 
 
