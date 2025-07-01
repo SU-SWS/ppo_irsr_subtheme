@@ -55,7 +55,7 @@ function ppo_irsr_subtheme_preprocess_ds_entity_view(&$variables) {
   }
 
   if ($paragraph->bundle() == 'stanford_page_title_banner') {
-    ppo_irsr_subtheme_preprocess_banner($variables);
+    ppo_irsr_subtheme_preprocess_page_title_banner($variables);
   }
 
   // Process Cards
@@ -74,7 +74,17 @@ function ppo_irsr_subtheme_preprocess_banner(&$variables) {
 
   // Add banner variant style class to banner wrapper.
   $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:banner_variant_info', 'banner_style');
-  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:page_title_variant_info', 'page_title_type');
+}
+
+/**
+ * Implements hook_preprocess_page_title_banner().
+ */
+function ppo_irsr_subtheme_preprocess_page_title_banner(&$variables) {
+
+  $paragraph = $variables['content']['#paragraph'];
+
+  // Add banner variant style class to page title banner wrapper.
+  $variables['attributes']['class'][] = $paragraph->getBehaviorSetting('react_paragraphs:page_title_variant_info', 'banner_style');
 }
 
 /**
