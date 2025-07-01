@@ -1,6 +1,6 @@
 # Example react_behaviors plugin definitions.
 # Plugin property $defaults are defined in ReactBehaviorsPluginManager.
-banner_variant_info:  # part of the key after the :
+banner_variant_info: # part of the key after the :
   id: banner_type
   label: 'Banner Paragraphs Type'
   bundles:
@@ -13,6 +13,20 @@ banner_variant_info:  # part of the key after the :
       empty_option: Default
       options:
         irsr-wrapper--banner-quote-text: Quote text
+        irsr-wrapper--banner-transparent-overlay: Transparent overlay
+
+page_title_variant_info:
+  id: page_title_type
+  label: 'Page Title Paragraph Type'
+  bundles:
+    - paragraphs_type|stanford_page_title_banner
+  config:
+    banner_style:
+      type: select
+      title: 'Page Title Banner style'
+      description: Select the styles for displaying this page title banner.
+      empty_option: Default
+      options:
         irsr-wrapper--banner-transparent-overlay: Transparent overlay
 
 card_variant_info:
@@ -73,6 +87,13 @@ layout_variant_info:
       empty_option: Default
       options:
         irsr-section-pb-none: None
+    padding_top:
+      type: select
+      title: Section padding top
+      description: Choose the section padding top.
+      empty_option: Default
+      options:
+        irsr-section-pt-none: None
 
 lists_variant_info:
   id: lists_style

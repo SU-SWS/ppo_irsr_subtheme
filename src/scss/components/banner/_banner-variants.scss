@@ -6,16 +6,16 @@
   .su-hero {
     display: block;
     min-height: 220px;
-  
+
     .su-hero__media {
       min-height: auto;
       position: absolute;
-  
+
       img {
         opacity: 0.4;
       }
     }
-  
+
     .su-hero__card {
       background: transparent;
       border: 0;
@@ -24,8 +24,9 @@
       text-align: center;
       max-width: unset;
       margin: 0;
+      width: 100%;
       bottom: unset;
-  
+
       .su-card__contents {
         @include responsive-spacing('padding-top', 4);
         @include responsive-spacing('padding-bottom', 5);
@@ -53,7 +54,7 @@
           font-family: $su-font-serif;
           @include responsive-spacing('margin-bottom', -1);
         }
-        
+
         h2 {
           @include type-a;
         }
@@ -90,7 +91,6 @@
               content: no-close-quote;
             }
           }
-
         }
       }
     }
