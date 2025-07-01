@@ -1,8 +1,8 @@
 name: IRSR Subtheme
 type: theme
-description: 'IRSR Subtheme.'
+description: 'PPO IRSR Subtheme.'
 package: Stanford
-version: 1.4.7
+version: 1.5.0
 core_version_requirement: ^9 || ^10
 base theme: stanford_basic
 libraries:
