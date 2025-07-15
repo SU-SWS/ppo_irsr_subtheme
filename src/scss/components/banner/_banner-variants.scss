@@ -124,3 +124,19 @@
 .node-stanford-page-su-page-banner {
   margin-bottom: 0;
 }
+
+.ptype-stanford-page-title-banner {
+  .irsr-wrapper--banner-transparent-overlay {
+    .su-hero {
+      display: block;
+      min-height: 330px;
+
+      .su-hero__card {
+        .su-card__contents {
+          @include responsive-spacing('padding-top', 7);
+          @include responsive-spacing('padding-bottom', 8);
+        }
+      }
+    }
+  }
+}
