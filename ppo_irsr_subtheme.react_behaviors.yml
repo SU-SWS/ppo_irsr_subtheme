@@ -28,6 +28,7 @@ page_title_variant_info:
       empty_option: Default
       options:
         irsr-wrapper--banner-transparent-overlay: Transparent overlay
+        irsr-wrapper--banner-center-text: Center text overlay
 
 card_variant_info:
   id: card_type
