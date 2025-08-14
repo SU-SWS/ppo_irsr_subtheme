@@ -2,7 +2,8 @@
 
 // Quote text and transparent overlay banner variant styles
 .irsr-wrapper--banner-quote-text,
-.irsr-wrapper--banner-transparent-overlay {
+.irsr-wrapper--banner-transparent-overlay,
+.irsr-wrapper--banner-center-text {
   .su-hero {
     display: block;
     min-height: 220px;
@@ -10,10 +11,6 @@
     .su-hero__media {
       min-height: auto;
       position: absolute;
-
-      img {
-        opacity: 0.4;
-      }
     }
 
     .su-hero__card {
@@ -103,6 +100,24 @@
   }
 }
 
+// Image Transparency
+.irsr-wrapper--banner-quote-text,
+.irsr-wrapper--banner-transparent-overlay {
+  .su-hero {
+    display: block;
+    min-height: 220px;
+
+    .su-hero__media {
+      min-height: auto;
+      position: absolute;
+
+      img {
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
 // Remove quote icon for transparent overlay banner variant
 .irsr-wrapper--banner-transparent-overlay {
   .su-hero {
@@ -125,6 +140,7 @@
   margin-bottom: 0;
 }
 
+// Custom banner spacing for page title banner
 .ptype-stanford-page-title-banner {
   .irsr-wrapper--banner-transparent-overlay {
     .su-hero {
