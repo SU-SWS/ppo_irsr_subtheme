@@ -14,12 +14,14 @@
   .ptype-stanford-card {
     height: 100%;
 
-    .ds-entity--stanford-card {
+    // Stanford Profile < 13 wrapped the card in a Display Suite div
+    // (.ds-entity--stanford-card). Profile 13 moved paragraph rendering to SDC
+    // and dropped the DS dependency, so .su-card is now a direct child of the
+    // paragraph wrapper. Target both so heights apply either way.
+    // @see stanford_profile 13.0.0 — #1094 (SDC refactor), #1101 (DS removal).
+    .ds-entity--stanford-card,
+    .su-card {
       height: 100%;
-
-      .su-card {
-        height: 100%;
-      }
     }
   }
 
